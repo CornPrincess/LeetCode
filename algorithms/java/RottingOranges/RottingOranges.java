@@ -1,12 +1,6 @@
-package RottingOranges;// Source : https://leetcode.com/problems/rotting-oranges/
+// Source : https://leetcode.com/problems/rotting-oranges/
 // Author : cornprinicess
 // Date   : 2020-03-05
-
-import java.util.ArrayDeque;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Queue;
-
 /*****************************************************************************************************
  *
  * In a given grid, each cell can have one of three values:
@@ -45,10 +39,16 @@ import java.util.Queue;
  * 	grid[i][j] is only 0, 1, or 2.
  * 
  ******************************************************************************************************/
+package RottingOranges;
+
+import java.util.ArrayDeque;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Queue;
 
 public class RottingOranges {
-    int[] dr = new int[]{-1,  0, 1, 0};
-    int[] dc = new int[]{0, -1, 0, 1};
+    private int[] dr = new int[]{-1,  0, 1, 0};
+    private int[] dc = new int[]{0, -1, 0, 1};
 
     public int orangeRotting(int[][] grid) {
         int R = grid.length;
@@ -94,6 +94,7 @@ public class RottingOranges {
         }
 
         return ans;
+
 
     }
 }

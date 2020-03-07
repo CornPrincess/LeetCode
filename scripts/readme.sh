@@ -38,14 +38,14 @@ URL=$(echo $URL | sed -e 's/oj\.leetcode\.com/leetcode\.com/g')
 get_question_slug ${URL}
 query_problem ${URL} ${QUESTION_TITLE_SLUG}
 
-#echo "$QUESTION_CONTENT"
-#echo $QUESTION_DIFFICULTY
-#echo $QUESTION_TITLE
-#echo $QUESTION_ID
-#echo $QUESTION_FRONTEND_ID
-#echo $QUESTION_CATEGORY
+echo "$QUESTION_CONTENT"
+echo $QUESTION_DIFFICULTY
+echo $QUESTION_TITLE
+echo $QUESTION_ID
+echo $QUESTION_FRONTEND_ID
+echo $QUESTION_CATEGORY
 
 
 FILE=`echo ${FILE} | sed "s/.*\/algorithms/\.\/algorithms/"`
 
-echo "|${QUESTION_FRONTEND_ID}|[${QUESTION_TITLE}](${URL}) | [C++](${FILE})|${QUESTION_DIFFICULTY}|"
+echo "|${QUESTION_FRONTEND_ID}|[${QUESTION_TITLE}](${URL}) | [Java](${FILE})|${QUESTION_DIFFICULTY}|"

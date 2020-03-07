@@ -6,10 +6,12 @@ I am looking forward to your pull request and star.
 
 ### LeetCode Algorithm
 
-| #    | Title                                                   | Solution | Difficulty | Method |
-| ---- | ------------------------------------------------------- | -------- | ---------- | ------ |
-|      |                                                         |          |            |        |
-| 67   | [Add Binary](https://leetcode.com/problems/add-binary/) | Java     | easy       |        |
+| #    | Title                                                   | Solution | Difficulty |
+| :----: | :-------------------------------------------------------: | :--------: | :----------: |
+|1103|[Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/) | [Java](./algorithms/java/DistributeCandiesToPeople/DistributeCandiesToPeople.java)|Easy|
+|994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | [Java](./algorithms/java/RottingOranges/RottingOranges.java)|Easy|
+
+
 
 ###  Reference
 
