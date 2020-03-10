@@ -6,10 +6,11 @@ I am looking forward to your pull request and star.
 
 ### LeetCode Algorithm
 
-| #    | Title                                                   | Solution | Difficulty |
-| :----: | :-------------------------------------------------------: | :--------: | :----------: |
-|1103|[Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/) | [Java](./algorithms/java/DistributeCandiesToPeople/DistributeCandiesToPeople.java)|Easy|
-|994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | [Java](./algorithms/java/RottingOranges/RottingOranges.java)|Easy|
+| #    | Title                                                   | Solution | Difficulty | Method| Times |
+| :----: | :-------------------------------------------------------: | :--------: | :----------: | :--------: | :----------: |
+|1103|[Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/) | [Java](./algorithms/java/DistributeCandiesToPeople/DistributeCandiesToPeople.java)|Easy|#|1|
+|994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | [Java](./algorithms/java/RottingOranges/RottingOranges.java)|Easy|#|1|
+|225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | [Java](./algorithms/java/ImplementStackUsingQueues/ImplementStackUsingQueues.java)|Easy|#|2|
 
 
 
