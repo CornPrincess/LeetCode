@@ -31,4 +31,26 @@ public class ReverseLinkedList {
         }
         return pre;
     }
+
+    // TODO recursion
+    public ListNode reverseListRecursion(ListNode head) {
+        if (head == null) {
+            return head;
+        }
+
+        ListNode newHead = recursion(head);
+        head.next = null;
+        return newHead;
+    }
+
+    public ListNode recursion(ListNode p) {
+        if (p.next == null) {
+            return p;
+        } else {
+            ListNode next = p.next;
+            ListNode newHead = recursion(next);
+            next.next = p;
+            return newHead;
+        }
+    }
 }
