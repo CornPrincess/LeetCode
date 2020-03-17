@@ -34,6 +34,42 @@
 
 package FindWordsThatCanBeFormedByCharacters;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class FindWordsThatCanBeFormedByCharacters {
-    // TODO
+    // use two hashMap to record value of char(key) and number of char(value)
+    // Time complexity o(n^3);
+    // Sapce complexity o(n^2);
+    public int solution(String[] words, String chars) {
+        char[] chars1 = chars.toCharArray();
+        Map<Character, Integer> map = generateMap(chars1);
+
+        int result = 0;
+        for (String s : words) {
+            Map<Character, Integer> map1 = generateMap(s.toCharArray());
+            boolean flag =  true;
+            for (Map.Entry<Character, Integer> entry : map1.entrySet()) {
+                if (map.getOrDefault(entry.getKey(), 0) == 0 || entry.getValue() > map.get(entry.getKey())) {
+                    flag = false;
+                    break;
+                }
+            }
+            result += flag ? s.length() : 0;
+        }
+        return result;
+    }
+
+    private Map<Character, Integer> generateMap(char[] chars) {
+        Map<Character, Integer> map = new HashMap<>();
+
+        for (char c: chars) {
+            if (!map.containsKey(c)) {
+                map.put(c, 1);
+            } else {
+                map.put(c, map.get(c) + 1);
+            }
+        }
+        return map;
+    }
 }
