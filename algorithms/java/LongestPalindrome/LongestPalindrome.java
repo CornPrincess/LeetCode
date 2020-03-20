@@ -27,6 +27,43 @@
 
 package LongestPalindrome;
 
+import java.util.Arrays;
+
 public class LongestPalindrome {
-    // TODO
+    public int greedy(String s) {
+        // A - Z : 65 - 90
+        // a - z : 97 - 122
+        int[] count = new int[128];
+        for (char c: s.toCharArray()) {
+            count[c]++;
+        }
+        System.out.println(Arrays.toString(count));
+
+        int ans = 0;
+        for (int v: count) {
+            ans += v / 2 * 2;
+            if (ans % 2 == 0 && v % 2 ==  1) {
+                ans++;
+            }
+        }
+        return ans;
+    }
+
+    // 位运算 x & 1 可以用来判断是基数还是偶数
+    // 数组空间可以改小
+    public int greedyRefacted(String s) {
+        // A - a : 65 - 122, has 58 chars
+        int[] count = new int[58];
+        for (char c: s.toCharArray()) {
+            count[c - 'A']++;
+        }
+
+        int ans = 0;
+        for (int v: count) {
+            ans += v - (v & 1);
+        }
+        return ans < s.length() ? ans + 1 : ans;
+    }
+
+    // TODO stream
 }
