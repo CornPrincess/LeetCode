@@ -28,8 +28,12 @@
 package LongestPalindrome;
 
 import java.util.Arrays;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class LongestPalindrome {
+    // Time Complexity: O(N)
+    // Space Complexity: O(1)
     public int greedy(String s) {
         // A - Z : 65 - 90
         // a - z : 97 - 122
@@ -66,4 +70,10 @@ public class LongestPalindrome {
     }
 
     // TODO stream
+    private int greedyByStream(String s) {
+        Map<Integer, Integer> count = s.chars().boxed()
+                .collect(Collectors.toMap(k -> k, v -> 1, Integer::sum));
+        int ans = count.values().stream().mapToInt(i -> i - (i & 1)).sum();
+        return ans < s.length() ? ans + 1 : ans;
+    }
 }
