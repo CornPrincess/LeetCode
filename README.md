@@ -11,6 +11,8 @@ I am looking forward to your pull request and star.
 |1160|[Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/) | [Java](./algorithms/java/FindWordsThatCanBeFormedByCharacters/FindWordsThatCanBeFormedByCharacters.java)|Easy|Two hashMap|1|
 |1103|[Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/) | [Java](./algorithms/java/DistributeCandiesToPeople/DistributeCandiesToPeople.java)|Easy|#|1|
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | [Java](./algorithms/java/RottingOranges/RottingOranges.java)|Easy|#|1|
+|945|[Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/) | [Java](./algorithms/java/MinimumIncrementToMakeArrayUnique/MinimumIncrementToMakeArrayUnique.java)|Medium|count, sort|1|
+|876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | [Java](./algorithms/java/MiddleOfTheLinkedList/MiddleOfTheLinkedList.java)|Easy|Two Points|1|
 |836|[Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap/) | [Java](./algorithms/java/RectangleOverlap/RectangleOverlap.java)|Easy|#|1|
 |409|[Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | [Java](./algorithms/java/LongestPalindrome/LongestPalindrome.java)|Easy|Greedy, Bitwise Operation|1|
 |225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | [Java](./algorithms/java/ImplementStackUsingQueues/ImplementStackUsingQueues.java)|Easy|#|2|

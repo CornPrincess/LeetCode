@@ -30,24 +30,58 @@
 
 package MinimumIncrementToMakeArrayUnique;
 
+import java.util.Arrays;
+
 public class MinimumIncrementToMakeArrayUnique {
-    public int minIncrementForUnique(int[] A) {
+    public int counting(int[] A) {
+        // Time Complexity: O(N), where N is the length of A.
+        //Space Complexity: O(N).
+        // 统计每个数字出现的次数
+        // 极端情况： 40000个40000，需要自增到80000
         int[] count = new int[80000];
-        for (int x: A) count[x]++;
+        for (int x: A) {
+            count[x]++;
+        }
 
-        int ans = 0, taken = 0;
-
-        for (int x = 0; x < 80000; ++x) {
-            if (count[x] >= 2) {
-                taken += count[x] - 1;
-                ans -= x * (count[x] - 1);
-            }
-            else if (taken > 0 && count[x] == 0) {
+        int ans = 0;
+        int taken = 0;
+        for (int i = 0; i < 80000; i++) {
+            if (count[i] >= 2) {
+                // taken：x出现的次数-1，即重复的需要进行增量的数有几个
+                taken += count[i] - 1;
+                ans -= i * (count[i] - 1);
+            } else if (taken > 0 && count[i] == 0) {
                 taken--;
-                ans += x;
+                ans += i;
+            }
+        }
+        return ans;
+    }
+
+    //时间复杂度：O(Nlog N)，其中 NN 是数组 AA 的长度，即排序的时间复杂度。
+    //空间复杂度：O(log N)，排序需要额外 O(\log N)O(logN) 的栈空间。
+    public int sort(int[] A) {
+        Arrays.sort(A);
+        int ans = 0;
+        int taken = 0;
+
+        for (int i = 1; i < A.length; i++) {
+            if (A[i-1] == A[i]) {
+                ans -= A[i];
+                taken++;
+            } else {
+                int give = Math.min(taken, A[i] - A[i-1] - 1);
+                ans += give * (give + 1) / 2 + give * A[i-1];
+                taken -= give;
             }
         }
 
+        if (A.length > 0) {
+            ans += taken * (taken + 1) / 2 + taken * A[A.length - 1];
+        }
         return ans;
     }
+
+    // TODO 计数排序，线性探测法（hash冲突）
+
 }

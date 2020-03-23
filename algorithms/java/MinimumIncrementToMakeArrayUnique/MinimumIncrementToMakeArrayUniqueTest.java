@@ -3,8 +3,6 @@ package MinimumIncrementToMakeArrayUnique;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 /**
  * Created by IntelliJ IDEA.
  * User: zhoutianbin
@@ -16,8 +14,14 @@ public class MinimumIncrementToMakeArrayUniqueTest {
     private int[] testcase = {3,2,1,2,1,7};
 
     @Test
-    public void minIncrementForUnique() {
-        int result = minimumIncrementToMakeArrayUnique.minIncrementForUnique(testcase);
+    public void test_counting() {
+        int result = minimumIncrementToMakeArrayUnique.counting(testcase);
+        Assert.assertEquals(6, result);
+    }
+
+    @Test
+    public void test_sort() {
+        int result = minimumIncrementToMakeArrayUnique.sort(testcase);
         Assert.assertEquals(6, result);
     }
 }
