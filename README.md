@@ -12,6 +12,7 @@ I am looking forward to your pull request and star.
 |1103|[Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/) | [Java](./algorithms/java/DistributeCandiesToPeople/DistributeCandiesToPeople.java)|Easy|#|1|
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | [Java](./algorithms/java/RottingOranges/RottingOranges.java)|Easy|#|1|
 |945|[Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/) | [Java](./algorithms/java/MinimumIncrementToMakeArrayUnique/MinimumIncrementToMakeArrayUnique.java)|Medium|Count, Sort|1|
+|892|[Surface Area of 3D Shapes](https://leetcode.com/problems/surface-area-of-3d-shapes/) | [Java](./algorithms/java/SurfaceAreaOf3dShapes/SurfaceAreaOf3dShapes.java)|Easy|Square by Square|1|
 |876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | [Java](./algorithms/java/MiddleOfTheLinkedList/MiddleOfTheLinkedList.java)|Easy|Two Points|1|
 |836|[Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap/) | [Java](./algorithms/java/RectangleOverlap/RectangleOverlap.java)|Easy|#|1|
 |409|[Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | [Java](./algorithms/java/LongestPalindrome/LongestPalindrome.java)|Easy|Greedy, Bitwise Operation|1|
