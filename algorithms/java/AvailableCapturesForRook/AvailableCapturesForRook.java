@@ -60,19 +60,8 @@ public class AvailableCapturesForRook {
     // Space Complexity：O(1)
     public int bruteForce(char[][] board) {
         int n = board.length;
-        int r = 0;
-        int c = 0;
-
-        searchLocation:
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                if (board[i][j] == 'R') {
-                    r = i;
-                    c = j;
-                    break searchLocation;
-                }
-            }
-        }
+        int r = findRLocation(board)[0];
+        int c = findRLocation(board)[1];
 
         int ans = 0;
         for (int j = c + 1; j < n; j++) {
@@ -115,22 +104,12 @@ public class AvailableCapturesForRook {
 
     public int bruteForce2(char[][] board) {
         int n = board.length;
-        int r = 0;
-        int c = 0;
+        int r = findRLocation(board)[0];
+        int c = findRLocation(board)[1];
         int ans = 0;
         int[] dx = {-1, 1, 0, 0};
         int[] dy = {0, 0, 1, -1};
 
-        searchLocation:
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                if (board[i][j] == 'R') {
-                    r = i;
-                    c = j;
-                    break searchLocation;
-                }
-            }
-        }
 
         for (int i = 0; i < 4; i++) {
             for (int step = 1; ; step++) {
@@ -145,5 +124,22 @@ public class AvailableCapturesForRook {
             }
         }
         return ans;
+    }
+
+    private int[] findRLocation(char[][] board) {
+        int n = board.length;
+        int r = 0;
+        int c = 0;
+        searchLocation:
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (board[i][j] == 'R') {
+                    r = i;
+                    c = j;
+                    break searchLocation;
+                }
+            }
+        }
+        return new int[]{r, c};
     }
 }
