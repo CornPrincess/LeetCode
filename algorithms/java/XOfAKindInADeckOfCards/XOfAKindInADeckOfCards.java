@@ -58,11 +58,7 @@ public class XOfAKindInADeckOfCards {
     // Space Complexity：O(N)
     public boolean bruteForce(int[] deck) {
         int x = 2;
-        Map<Integer, Integer> count = new HashMap<>();
-
-        for (int i : deck) {
-            count.put(i, count.getOrDefault(i, 0) + 1);
-        }
+        Map<Integer, Integer> count = generateValueCount(deck);
 
         boolean result = false;
         while (x <= deck.length) {
@@ -84,43 +80,51 @@ public class XOfAKindInADeckOfCards {
         return result;
     }
 
-    public boolean gcd(int[] deck) {
+    // Time Complexity：O(NlgC)
+    // Space Complexity：O(N)
+    public boolean generateGCD(int[] deck) {
         int len = deck.length;
         if (len < 2) {
             return false;
         }
 
-        // 计数数组，10000 是根据题目给出的数值范围定的
-        int[] cnt = new int[10000];
-        for (int num : deck) {
-            cnt[num]++;
-        }
+        Map<Integer, Integer> count = generateValueCount(deck);
 
-        // 先得到第 1 个数的个数，以避免在循环中赋值
-        int x = cnt[deck[0]];
-
-        for (int i = 0; i < 10000; i++) {
-            if (cnt[i] == 1) {
+        int gcd = -1;
+        for (Integer value : count.values()) {
+            if (value < 2) {
                 return false;
             }
 
-            if (cnt[i] > 1) {
-                x = gcd(x, cnt[i]);
+            if (gcd == -1) {
+                gcd = value;
+            } else {
+                gcd = generateGCD(gcd, value);
+            }
 
-                // 这里做判断可以提前终止运行，也可以等到最后再做，各有优劣，任选其一
-                if (x == 1) {
-                    return false;
-                }
+            if (gcd < 2) {
+                return false;
             }
         }
-        return true;
+
+        return gcd >= 2;
     }
 
-    private int gcd(int a, int b) {
+    private Map<Integer, Integer> generateValueCount(int[] deck) {
+        Map<Integer, Integer> count = new HashMap<>();
+
+        for (int i : deck) {
+            count.put(i, count.getOrDefault(i, 0) + 1);
+        }
+        return count;
+    }
+
+    // 求最大公约数公式： gcd(a, b) = gcd(b, a % b)
+    // 不用判断a > b，因为当a < b时，第一此递归会将a与b呼唤
+    private int generateGCD(int a, int b) {
         if (b == 0) {
             return a;
         }
-        return gcd(b, a % b);
+        return generateGCD(b, a % b);
     }
-
 }

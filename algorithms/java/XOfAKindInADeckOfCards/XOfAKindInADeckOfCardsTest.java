@@ -1,6 +1,5 @@
 package XOfAKindInADeckOfCards;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -26,9 +25,9 @@ public class XOfAKindInADeckOfCardsTest {
 
     @Test
     public void gcd() {
-        boolean result = x.gcd(testcase);
+        boolean result = x.generateGCD(testcase);
         assertTrue(result);
-        boolean result2 = x.gcd(testcase2);
+        boolean result2 = x.generateGCD(testcase2);
         assertFalse(result2);
     }
 }
