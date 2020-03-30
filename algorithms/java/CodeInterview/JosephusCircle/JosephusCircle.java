@@ -54,6 +54,23 @@ public class JosephusCircle {
         return curr.val;
     }
 
+    public int recursive(int n, int m) {
+        if (n == 1) {
+            return 0;
+        }
+
+        int x = recursive(n - 1, m);
+        return (x + m) % n;
+    }
+
+    public int iterate(int n, int m) {
+        int x = 0;
+        for (int i = 2; i <= n; i++) {
+            x = (x + m) % i;
+        }
+        return x;
+    }
+
     private ListNode generateLinkedList(int n) {
         ListNode head = new ListNode(0);
         ListNode pre = head;
