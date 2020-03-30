@@ -37,13 +37,21 @@ public class JosephusCircle {
                 curr = curr.next;
             }
             System.out.println("delete node: " + curr.val);
+            // if m = 1, pre == null
+            if (pre == null) {
+                ListNode tmp = head;
+                for (int j = 0; j < n - 1; j++) {
+                    tmp = tmp.next;
+                }
+//                pre = tmp;
+                return tmp.val;
+            }
             pre.next = curr.next;
             curr.next = null;
             curr = pre.next;
         }
 
         return curr.val;
-
     }
 
     private ListNode generateLinkedList(int n) {

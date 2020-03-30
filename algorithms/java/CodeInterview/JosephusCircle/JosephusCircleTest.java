@@ -18,5 +18,9 @@ public class JosephusCircleTest {
     public void lastRemaining() {
         int result = josephusCircle.mockLinkedList(5, 3);
         Assert.assertEquals(result, 3);
+        int result2 = josephusCircle.mockLinkedList(5, 1);
+        Assert.assertEquals(result2, 4);
+        int result3 = josephusCircle.mockLinkedList(10, 17);
+        Assert.assertEquals(result3, 2);
     }
 }
