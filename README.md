@@ -28,3 +28,5 @@ I am looking forward to your pull request and star.
 - [LeetCode(soulmachine)](https://github.com/soulmachine/leetcode)
 - [visualgo](https://visualgo.net)
 
+### TODO
+- [ ] 136. Single Number
