@@ -28,3 +28,16 @@
  * 
  ******************************************************************************************************/
 
+class A {
+    public static void main(String[] args) {
+        Integer i = 3;
+        System.out.println(i);
+        test(i);
+        System.out.println(i);
+    }
+
+    public static void test(Integer i) {
+        i = 3 * i;
+        System.out.println("test: " + i);
+    }
+}

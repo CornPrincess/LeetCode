@@ -43,4 +43,31 @@ public class JosephusCircleTest {
         int result3 = josephusCircle.iterate(10, 17);
         Assert.assertEquals(result3, 2);
     }
+
+    @Test
+    public void test() {
+        Integer i = 127;
+        Integer i2 = 127;
+        System.out.println(i  == i2); // true
+
+        Integer i3 = -128;
+        Integer i4 = -128;
+        System.out.println(i3  == i4); // true
+
+        Integer i5 = 128;
+        Integer i6 = 128;
+        System.out.println(i5  == i6); // false
+
+        Integer i7 = -129;
+        Integer i8 = -129;
+        System.out.println(i7  == i8); // false
+
+        Integer j = new Integer(127);
+        Integer j2 = new Integer(127);
+        System.out.println(j == j2);  // false
+
+        Integer a = 1;
+        Double b = 2.0;
+        System.out.println(true ? a : b); // 1.0
+    }
 }
