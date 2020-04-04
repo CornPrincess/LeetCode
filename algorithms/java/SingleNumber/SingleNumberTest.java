@@ -41,4 +41,12 @@ public class SingleNumberTest {
         int result = singleNumber.bitwise(testcase);
         Assert.assertEquals(result, 4);
     }
+
+    @Test
+    public void test() {
+        byte a = 1;
+        byte b = (byte) (a + 1);
+        a += 1.0;
+        System.out.println(a);
+    }
 }

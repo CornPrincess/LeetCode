@@ -1,6 +1,6 @@
 # LeetCode
 
-This reporsitory is inspired by [haoel/leetcode](<https://github.com/haoel/leetcode>), I will want to record and review the solution of leetcode on my own, and I hope I can finish the easy problems in the end of May 2019.
+This reporsitory is inspired by [haoel/leetcode](<https://github.com/haoel/leetcode>), I just want to record and review the solution of leetcode on my own, and I hope I can finish the easy problems in the end of May 2019.
 
 I am looking forward to your pull request and star.
 
@@ -21,8 +21,9 @@ I am looking forward to your pull request and star.
 |289|[Game of Life](https://leetcode.com/problems/game-of-life/) | [Java](./algorithms/java/GameOfLife/GameOfLife.java)|Medium|Bitwise Operation|1|
 |225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | [Java](./algorithms/java/ImplementStackUsingQueues/ImplementStackUsingQueues.java)|Easy|#|2|
 |136|[Single Number](https://leetcode.com/problems/single-number/) | [Java](./algorithms/java/SingleNumber/SingleNumber.java)|Easy|List, Map, Bitwise Operation|1|
+|8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | [Java](./algorithms/java/StringToIntegerAtoi/StringToIntegerAtoi.java)|Medium|DFA|1|
 
-> Method: `#` means that I use the common method, just some logic operate
+> note: `#` means that I use the common method, just some logic operate
 
 ###  Reference
 
@@ -32,4 +33,3 @@ I am looking forward to your pull request and star.
 - [visualgo](https://visualgo.net)
 
 ### TODO
-- [ ] 136. Single Number
