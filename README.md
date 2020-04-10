@@ -1,10 +1,10 @@
 # LeetCode
 
-This reporsitory is inspired by [haoel/leetcode](<https://github.com/haoel/leetcode>), I just want to record and review the solution of leetcode on my own, and I hope I can finish the easy problems in the end of May 2019.
+This reporsitory is inspired by [haoel/leetcode](<https://github.com/haoel/leetcode>), and the scripts come from haoel/leetcode/scripts. I just want to record and review the solution of leetcode on my own.
 
 I am looking forward to your pull request and star.
 
-### LeetCode Algorithm
+## LeetCode Algorithm
 
 | #    | Title                                                   | Solution | Difficulty | Method| Times |
 | :----: | :-------------------------------------------------------: | :--------: | :----------: | :--------: | :----------: |
@@ -21,16 +21,16 @@ I am looking forward to your pull request and star.
 |289|[Game of Life](https://leetcode.com/problems/game-of-life/) | [Java](./algorithms/java/GameOfLife/GameOfLife.java)|Medium|Bitwise Operation|1|
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [Java](./algorithms/java/MoveZeroes/MoveZeroes.java)|Easy|#|1|
 |225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | [Java](./algorithms/java/ImplementStackUsingQueues/ImplementStackUsingQueues.java)|Easy|#|2|
+|151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | [Java](./algorithms/java/ReverseWordsInAString/ReverseWordsInAString.java)|Medium|Regex StringBuilder|0.5|
 |136|[Single Number](https://leetcode.com/problems/single-number/) | [Java](./algorithms/java/SingleNumber/SingleNumber.java)|Easy|List, Map, Bitwise Operation|1|
+|49|[Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [Java](./algorithms/java/GroupAnagrams/GroupAnagrams.java)|Medium|HashMap|1|
 |8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | [Java](./algorithms/java/StringToIntegerAtoi/StringToIntegerAtoi.java)|Medium|DFA|1|
 
 > note: `#` means that I use the common method, just some logic operate
 
-###  Reference
+##  Reference
 
 - [LeetCodeAnimation](https://github.com/MisterBooo/LeetCodeAnimation)
 - [LeetCode(haoel)](https://github.com/haoel/leetcode)
 - [LeetCode(soulmachine)](https://github.com/soulmachine/leetcode)
 - [visualgo](https://visualgo.net)
-
-### TODO

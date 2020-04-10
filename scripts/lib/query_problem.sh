@@ -15,10 +15,10 @@ function query_problem()
 {
     TMP_JSON_FILE=tmp.json
 
-#    curl -s "https://leetcode.com/graphql?query=query%20getQuestionDetail(%24titleSlug%3A%20String!)%20%7B%0A%20%20isCurrentUserAuthenticated%0A%20%20question(titleSlug%3A%20%24titleSlug)%20%7B%0A%20%20%20%20questionId%0A%20%20%20%20questionFrontendId%0A%20%20%20%20questionTitle%0A%20%20%20%20translatedTitle%0A%20%20%20%20questionTitleSlug%0A%20%20%20%20content%0A%20%20%20%20translatedContent%0A%20%20%20%20difficulty%0A%20%20%20%20stats%0A%20%20%20%20contributors%0A%20%20%20%20similarQuestions%0A%20%20%20%20discussUrl%0A%20%20%20%20mysqlSchemas%0A%20%20%20%20randomQuestionUrl%0A%20%20%20%20sessionId%0A%20%20%20%20categoryTitle%0A%20%20%20%20submitUrl%0A%20%20%20%20interpretUrl%0A%20%20%20%20codeDefinition%0A%20%20%20%20sampleTestCase%0A%20%20%20%20enableTestMode%0A%20%20%20%20metaData%0A%20%20%20%20enableRunCode%0A%20%20%20%20enableSubmit%0A%20%20%20%20judgerAvailable%0A%20%20%20%20infoVerified%0A%20%20%20%20envInfo%0A%20%20%20%20urlManager%0A%20%20%20%20article%0A%20%20%20%20questionDetailUrl%0A%20%20%20%20discussCategoryId%0A%20%20%20%20discussSolutionCategoryId%0A%20%20%20%20libraryUrl%0A%20%20%20%20companyTags%20%7B%0A%20%20%20%20%20%20name%0A%20%20%20%20%20%20slug%0A%20%20%20%20%20%20translatedName%0A%20%20%20%20%7D%0A%20%20%20%20topicTags%20%7B%0A%20%20%20%20%20%20name%0A%20%20%20%20%20%20slug%0A%20%20%20%20%20%20translatedName%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20interviewed%20%7B%0A%20%20%20%20interviewedUrl%0A%20%20%20%20companies%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20name%0A%20%20%20%20%20%20slug%0A%20%20%20%20%7D%0A%20%20%20%20timeOptions%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20name%0A%20%20%20%20%7D%0A%20%20%20%20stageOptions%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20name%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20subscribeUrl%0A%20%20isPremium%0A%20%20loginUrl%0A%7D%0A&operationName=getQuestionDetail&variables=%7B%22titleSlug%22%3A%22${2}%22%7D" > ${TMP_JSON_FILE} 
+#    curl -s "https://leetcode.com/graphql?query=query%20getQuestionDetail(%24titleSlug%3A%20String!)%20%7B%0A%20%20isCurrentUserAuthenticated%0A%20%20question(titleSlug%3A%20%24titleSlug)%20%7B%0A%20%20%20%20questionId%0A%20%20%20%20questionFrontendId%0A%20%20%20%20questionTitle%0A%20%20%20%20translatedTitle%0A%20%20%20%20questionTitleSlug%0A%20%20%20%20content%0A%20%20%20%20translatedContent%0A%20%20%20%20difficulty%0A%20%20%20%20stats%0A%20%20%20%20contributors%0A%20%20%20%20similarQuestions%0A%20%20%20%20discussUrl%0A%20%20%20%20mysqlSchemas%0A%20%20%20%20randomQuestionUrl%0A%20%20%20%20sessionId%0A%20%20%20%20categoryTitle%0A%20%20%20%20submitUrl%0A%20%20%20%20interpretUrl%0A%20%20%20%20codeDefinition%0A%20%20%20%20sampleTestCase%0A%20%20%20%20enableTestMode%0A%20%20%20%20metaData%0A%20%20%20%20enableRunCode%0A%20%20%20%20enableSubmit%0A%20%20%20%20judgerAvailable%0A%20%20%20%20infoVerified%0A%20%20%20%20envInfo%0A%20%20%20%20urlManager%0A%20%20%20%20article%0A%20%20%20%20questionDetailUrl%0A%20%20%20%20discussCategoryId%0A%20%20%20%20discussSolutionCategoryId%0A%20%20%20%20libraryUrl%0A%20%20%20%20companyTags%20%7B%0A%20%20%20%20%20%20name%0A%20%20%20%20%20%20slug%0A%20%20%20%20%20%20translatedName%0A%20%20%20%20%7D%0A%20%20%20%20topicTags%20%7B%0A%20%20%20%20%20%20name%0A%20%20%20%20%20%20slug%0A%20%20%20%20%20%20translatedName%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20interviewed%20%7B%0A%20%20%20%20interviewedUrl%0A%20%20%20%20companies%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20name%0A%20%20%20%20%20%20slug%0A%20%20%20%20%7D%0A%20%20%20%20timeOptions%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20name%0A%20%20%20%20%7D%0A%20%20%20%20stageOptions%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20name%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20subscribeUrl%0A%20%20isPremium%0A%20%20loginUrl%0A%7D%0A&operationName=getQuestionDetail&variables=%7B%22titleSlug%22%3A%22${2}%22%7D" > ${TMP_JSON_FILE}
 
     #
-    # NOTE: leetcode server supports `br` encoding and make it high priority. But curl doesn't support it, 
+    # NOTE: leetcode server supports `br` encoding and make it high priority. But curl doesn't support it,
     #       So, you need make sure the `accept-encoding` hasn't br in the request header.
     #       (if you copy & paste the curl script from Chrome, the `br` could be added!)
     #
@@ -37,7 +37,7 @@ function query_problem()
     --data-binary '{"operationName":"questionData","variables":{"titleSlug":"'${2}'"},"query":"query questionData($titleSlug: String!) {\n  question(titleSlug: $titleSlug) {\n    questionId\n    questionFrontendId\n    boundTopicId\n    title\n    titleSlug\n    content\n    translatedTitle\n    translatedContent\n    isPaidOnly\n    difficulty\n    likes\n    dislikes\n    isLiked\n    similarQuestions\n    contributors {\n      username\n      profileUrl\n      avatarUrl\n      __typename\n    }\n    langToValidPlayground\n    topicTags {\n      name\n      slug\n      translatedName\n      __typename\n    }\n    companyTagStats\n    codeSnippets {\n      lang\n      langSlug\n      code\n      __typename\n    }\n    stats\n    hints\n    solution {\n      id\n      canSeeDetail\n      __typename\n    }\n    status\n    sampleTestCase\n    metaData\n    judgerAvailable\n    judgeType\n    mysqlSchemas\n    enableRunCode\n    enableTestMode\n    envInfo\n    __typename\n  }\n}\n"}' --compressed > ${TMP_JSON_FILE}
 
     # xidel change the -q option to -s after 0.9.4 version, so we have to check that
-    # if xidel has -q option, then it will return error. 
+    # if xidel has -q option, then it will return error.
 
     OPT=
 
@@ -46,12 +46,12 @@ function query_problem()
     if [ $? -ne 0 ]; then
        OPT=-q
     else
-       # if xidel has -s option, then it will return error. 
+       # if xidel has -s option, then it will return error.
        xidel -s 2>/dev/null
        if  [ $? -ne 0 ]; then
            OPT=-s
        fi
-    fi 
+    fi
     set -e
 
     QUESTION_CONTENT=$(xidel ${OPT} ${TMP_JSON_FILE} -e '$json("data").question.content' | sed -e 's/<[^>]*>//g; s/&nbsp;/ /g; s/&amp;/\&/g; s/&lt;/\</g; s/&gt;/\>/g; s/&quot;/\"/g; s/&#39;/\'"'"'/g; s/&ldquo;/\"/g;')
@@ -65,7 +65,7 @@ function query_problem()
     QUESTION_FRONTEND_ID=$(xidel ${OPT} ${TMP_JSON_FILE} -e '$json("data").question.questionFrontendId')
 
     QUESTION_CATEGORY=$(xidel ${OPT} ${TMP_JSON_FILE} -e '$json("data").question.categoryTitle')
-    
+
     rm -f $TMP_JSON_FILE
 }
 
@@ -79,6 +79,16 @@ function detect_os()
        platform='macos'
     fi
     echo ${platform}
+}
+
+function install_brew()
+{
+    TRUE_CMD=`which true`
+    brew=`type -P brew || ${TRUE_CMD}`
+    if [ -z "${brew}" ]; then
+        echo "brew not found !"
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    fi
 }
 
 function install_xidel()
@@ -97,7 +107,7 @@ function install_xidel()
     fi
 
     #install the xidel on Linux platform
-    xidel_ver=0.9.6
+    xidel_ver=0.9.8
     if [[ "$platform" == "linux" ]]; then
         hardware=`uname -m`
         xidel_tar=xidel-${xidel_ver}.linux64.tar.gz
@@ -111,7 +121,7 @@ function install_xidel()
         esac
         if [ ! -f ${xidel_tar} ]; then
             echo "Downloading xidel......"
-            curl -s -L https://jaist.dl.sourceforge.net/project/videlibri/Xidel/Xidel%20${xidel_ver}/${xidel_tar} -o ${xidel_tar}
+            curl -# -L https://github.com/benibela/xidel/releases/download/Xidel_${xidel_ver}/${xidel_tar} -o ${xidel_tar}
         fi
         tar -zxvf ${xidel_tar}
         sudo ./install.sh
@@ -120,13 +130,9 @@ function install_xidel()
     #install the xidel on MacOS platform
     #refer to: https://www.evernote.com/shard/s69/sh/ff1e78f3-a369-4855-b18f-6184ce789c45/f3511927d0fb356ce883835f2eb712e0
     if [[ "$platform" == "macos" ]]; then
-        echo "Downloading xidel......"
-        xidel_zip=xidel.zip
-        if [ ! -f ${xidel_zip} ]; then
-            curl -L https://www.evernote.com/shard/s69/sh/ff1e78f3-a369-4855-b18f-6184ce789c45/f3511927d0fb356ce883835f2eb712e0/res/de33e89a-cdc6-42b5-a476-32e2df1cf4bc/${xidel_zip} -o ${xidel_zip}
-        fi
-        unzip ${xidel_zip}
-        mv xidel /usr/local/bin/
+        install_brew
+        echo "brew install xidel..."
+        brew install xidel
     fi
 
     cd ..

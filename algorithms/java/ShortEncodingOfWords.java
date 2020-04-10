@@ -39,5 +39,8 @@ class A {
     public static void test(Integer i) {
         i = 3 * i;
         System.out.println("test: " + i);
+        // 0000 0100 -- 1111 1011 --
+        // 110
+        System.out.println(~4);
     }
 }
