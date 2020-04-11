@@ -27,4 +27,10 @@ public class ReverseWordsInAStringTest {
         String result = reverseWordsInAString.useOwnLibrary(testcase);
         Assert.assertEquals("example good a", result);
     }
+
+    @Test
+    public void test_useDeque() {
+        String result = reverseWordsInAString.deque(testcase);
+        Assert.assertEquals("example good a", result);
+    }
 }

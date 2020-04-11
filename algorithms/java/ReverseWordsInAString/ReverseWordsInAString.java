@@ -39,9 +39,7 @@
 
 package ReverseWordsInAString;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class ReverseWordsInAString {
 
@@ -120,5 +118,32 @@ public class ReverseWordsInAString {
         }
     }
 
-    // TODO Queue
+    public String deque(String s) {
+        int left = 0;
+        int right = s.length() -1;
+
+        // trim left and right space
+        while (left <= right && s.charAt(left) == ' ') left++;
+
+        while (left <= right && s.charAt(right) == ' ') right--;
+
+        Deque<String> d = new ArrayDeque<>();
+        StringBuilder word = new StringBuilder();
+
+        while (left <= right) {
+            char c = s.charAt(left);
+            if (word.length() != 0 && c == ' ') {
+                // add word into deque
+                d.offerFirst(word.toString());
+                word.setLength(0);
+            } else if (c != ' ') {
+                word.append(c);
+            }
+            left++;
+        }
+        // add the last word into deque
+        d.offerFirst(word.toString());
+        return String.join(" ", d);
+    }
+
 }
