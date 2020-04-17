@@ -23,6 +23,7 @@ I am looking forward to your pull request and star.
 |225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | [Java](./algorithms/java/ImplementStackUsingQueues/ImplementStackUsingQueues.java)|Easy|#|2|
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | [Java](./algorithms/java/ReverseWordsInAString/ReverseWordsInAString.java)|Medium|Regex StringBuilder Deque|1|
 |136|[Single Number](https://leetcode.com/problems/single-number/) | [Java](./algorithms/java/SingleNumber/SingleNumber.java)|Easy|List, Map, Bitwise Operation|1|
+|55|[Jump Game](https://leetcode.com/problems/jump-game/) | [Java](./algorithms/java/JumpGame/JumpGame.java)|Medium|Greedy|1|
 |49|[Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [Java](./algorithms/java/GroupAnagrams/GroupAnagrams.java)|Medium|HashMap|1|
 |8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | [Java](./algorithms/java/StringToIntegerAtoi/StringToIntegerAtoi.java)|Medium|DFA|1|
 

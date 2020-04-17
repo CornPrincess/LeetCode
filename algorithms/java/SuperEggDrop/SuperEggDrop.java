@@ -46,4 +46,10 @@
  * 
  ******************************************************************************************************/
 
-// TODO
+package SuperEggDrop;
+
+public class SuperEggDrop {
+    public int test() {
+        return 1;
+    }
+}
