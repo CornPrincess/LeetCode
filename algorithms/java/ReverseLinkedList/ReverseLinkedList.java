@@ -18,6 +18,8 @@
 
 package ReverseLinkedList;
 
+import java.util.List;
+
 public class ReverseLinkedList {
 
     public ListNode reverseList(ListNode head) {
@@ -52,5 +54,13 @@ public class ReverseLinkedList {
             next.next = p;
             return newHead;
         }
+    }
+
+    public ListNode recursive(ListNode head) {
+        if (head == null || head.next == null) return head;
+        ListNode p = recursive(head.next);
+        head.next.next = head;
+        head.next = null;
+        return p;
     }
 }

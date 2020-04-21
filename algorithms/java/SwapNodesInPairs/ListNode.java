@@ -1,4 +1,4 @@
-package ReverseLinkedList;
+package SwapNodesInPairs;
 
 /**
  * Created by IntelliJ IDEA.

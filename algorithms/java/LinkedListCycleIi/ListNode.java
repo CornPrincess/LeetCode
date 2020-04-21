@@ -1,4 +1,4 @@
-package ReverseLinkedList;
+package LinkedListCycleIi;
 
 /**
  * Created by IntelliJ IDEA.

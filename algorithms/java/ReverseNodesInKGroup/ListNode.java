@@ -1,4 +1,4 @@
-package ReverseLinkedList;
+package ReverseNodesInKGroup;
 
 /**
  * Created by IntelliJ IDEA.

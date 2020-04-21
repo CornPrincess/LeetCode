@@ -19,12 +19,17 @@ I am looking forward to your pull request and star.
 |836|[Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap/) | [Java](./algorithms/java/RectangleOverlap/RectangleOverlap.java)|Easy|#|1|
 |409|[Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | [Java](./algorithms/java/LongestPalindrome/LongestPalindrome.java)|Easy|Greedy, Bitwise Operation|1|
 |289|[Game of Life](https://leetcode.com/problems/game-of-life/) | [Java](./algorithms/java/GameOfLife/GameOfLife.java)|Medium|Bitwise Operation|1|
-|283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [Java](./algorithms/java/MoveZeroes/MoveZeroes.java)|Easy|#|1|
+|283|[Move Zeroes](https://leetcode.com/problems/move-../zeroes/) | [Java](./algorithms/java/MoveZeroes/MoveZeroes.java)|Easy|#|1|
 |225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | [Java](./algorithms/java/ImplementStackUsingQueues/ImplementStackUsingQueues.java)|Easy|#|2|
+|206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Java](./algorithms/java/ReverseLinkedList/ReverseLinkedList.java)|Easy|iterative recursive|2|
+|202|[Happy Number](https://leetcode.com/problems/happy-number/solution/kuai-le-shu-by-leetcode/) | [Java](./algorithms/java/HappyNumber/HappyNumber.java)|Easy|HashSet Two point|2|
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | [Java](./algorithms/java/ReverseWordsInAString/ReverseWordsInAString.java)|Medium|Regex StringBuilder Deque|1|
+|141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | [Java](./algorithms/java/LinkedListCycle/LinkedListCycle.java)|Easy|HashSet Two Points|1|
+|142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [Java](./algorithms/java/LinkedListCycleIi/LinkedListCycleIi.java)|Medium|HashSet Two Points|1|
 |136|[Single Number](https://leetcode.com/problems/single-number/) | [Java](./algorithms/java/SingleNumber/SingleNumber.java)|Easy|List, Map, Bitwise Operation|1|
 |55|[Jump Game](https://leetcode.com/problems/jump-game/) | [Java](./algorithms/java/JumpGame/JumpGame.java)|Medium|Greedy|1|
 |49|[Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [Java](./algorithms/java/GroupAnagrams/GroupAnagrams.java)|Medium|HashMap|1|
+|24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [Java](./algorithms/java/SwapNodesInPairs/SwapNodesInPairs.java)|Medium|iterative recursive|1|
 |8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | [Java](./algorithms/java/StringToIntegerAtoi/StringToIntegerAtoi.java)|Medium|DFA|1|
 
 > note: `#` means that I use the common method, just some logic operate
