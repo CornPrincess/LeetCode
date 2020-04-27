@@ -30,6 +30,7 @@ I am looking forward to your pull request and star.
 |55|[Jump Game](https://leetcode.com/problems/jump-game/) | [Java](./algorithms/java/JumpGame/JumpGame.java)|Medium|Greedy|1|
 |49|[Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [Java](./algorithms/java/GroupAnagrams/GroupAnagrams.java)|Medium|HashMap|1|
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [Java](./algorithms/java/SwapNodesInPairs/SwapNodesInPairs.java)|Medium|iterative recursive|1|
+|20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Java](./algorithms/java/ValidParentheses/ValidParentheses.java)|Easy|Stack HashMap|1|
 |8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | [Java](./algorithms/java/StringToIntegerAtoi/StringToIntegerAtoi.java)|Medium|DFA|1|
 
 > note: `#` means that I use the common method, just some logic operate
