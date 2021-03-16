@@ -1,10 +1,7 @@
 package ReverseWordsInAString;
 
-import ReverseLinkedList.ReverseLinkedList;
 import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by IntelliJ IDEA.

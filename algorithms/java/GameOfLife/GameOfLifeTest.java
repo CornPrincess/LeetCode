@@ -3,8 +3,6 @@ package GameOfLife;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 /**
  * Created by IntelliJ IDEA.
  * User: zhoutianbin

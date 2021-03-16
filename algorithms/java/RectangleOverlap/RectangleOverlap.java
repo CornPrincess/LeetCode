@@ -31,9 +31,6 @@
 
 package RectangleOverlap;
 
-import java.util.Stack;
-import java.util.Vector;
-
 public class RectangleOverlap {
     // check positon
     // Time and Space Complexity: O(1).

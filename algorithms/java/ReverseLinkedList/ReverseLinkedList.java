@@ -18,8 +18,6 @@
 
 package ReverseLinkedList;
 
-import java.util.List;
-
 public class ReverseLinkedList {
 
     public ListNode reverseList(ListNode head) {
