@@ -48,4 +48,67 @@ public class SpiralMatrixii {
         }
         return matrix;
     }
+
+    // 按层遍历
+    public int[][] generateMatrix2(int n) {
+        int left = 0;
+        int top = 0;
+        int right = n - 1;
+        int bottom = n - 1;
+        int[][] res = new int[n][n];
+        int currNum = 1;
+        while (top < n && left < n) {
+            // 分四次画出一个环
+            for (int i = left; i <= right; i++) {
+                res[top][i] = currNum++;
+            }
+            for (int i = top + 1; i < bottom; i++) {
+                res[i][right] = currNum++;
+            }
+            // core 防止重复赋值
+            if (left < right) {
+                for (int i = right; i >= left; i--) {
+                    res[bottom][i] = currNum++;
+                }
+            }
+            for (int i = bottom - 1; i > top; i--) {
+                res[i][left] = currNum++;
+            }
+            left++;
+            top++;
+            bottom--;
+            right--;
+        }
+        return res;
+    }
+
+    // core 也是按层画的思想，不过代码更加简洁
+    public int[][] generateMatrix3(int n) {
+        int left = 0;
+        int top = 0;
+        int right = n - 1;
+        int bottom = n - 1;
+        int[][] res = new int[n][n];
+        int currNum = 1;
+        while (currNum <= n * n) {
+            // 分四次画出一个环
+            for (int i = left; i <= right; i++) {
+                res[top][i] = currNum++;
+            }
+            top++;
+            for (int i = top; i <= bottom; i++) {
+                res[i][right] = currNum++;
+            }
+            right--;
+            for (int i = right; i >= left; i--) {
+                res[bottom][i] = currNum++;
+            }
+            bottom--;
+            for (int i = bottom; i >= top; i--) {
+                res[i][left] = currNum++;
+            }
+            left++;
+        }
+        return res;
+    }
 }

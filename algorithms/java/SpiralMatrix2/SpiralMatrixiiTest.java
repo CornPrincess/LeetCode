@@ -18,4 +18,20 @@ public class SpiralMatrixiiTest {
         final int[][] ints = spiralMatrixii.generateMatrix(3);
         System.out.println(Arrays.deepToString(ints));
     }
+
+    @Test
+    public void test2() {
+        final int[][] ints = spiralMatrixii.generateMatrix2(5);
+        for (int[] a: ints) {
+            System.out.println(Arrays.toString(a));
+        }
+    }
+
+    @Test
+    public void test3() {
+        final int[][] ints = spiralMatrixii.generateMatrix3(5);
+        for (int[] a: ints) {
+            System.out.println(Arrays.toString(a));
+        }
+    }
 }

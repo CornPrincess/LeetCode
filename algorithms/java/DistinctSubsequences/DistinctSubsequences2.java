@@ -6,7 +6,7 @@ package DistinctSubsequences;
  * Date: 3/17/21
  * Time: 10:59 PM
  */
-public class Temp {
+public class DistinctSubsequences2 {
     // dp
     public int numDistinct(String s, String t) {
         int m = s.length();
@@ -37,16 +37,16 @@ public class Temp {
     }
 
     // 空间优化
-    public int numDistinct(String s, String t) {
+    public int numDistinct2(String s, String t) {
         int m = s.length();
         int n = t.length();
-        int[] dp = new int[n+1];
+        int[] dp = new int[n + 1];
 
-        for (int i = 1; i <=m; i++) {
+        for (int i = 1; i <= m; i++) {
             int pre = 1;
-            for (int j =1;j <=n; j++) {
+            for (int j = 1; j <= n; j++) {
                 int cur = dp[j];
-                if (s.charAt(i-1) == t.charAt(j-1)) {
+                if (s.charAt(i - 1) == t.charAt(j - 1)) {
                     dp[j] += pre;
                 }
                 pre = cur;
@@ -56,25 +56,28 @@ public class Temp {
     }
 
     // todo 空间优化
-    public int numDistinct(String s, String t) {
+    public int numDistinct3(String s, String t) {
         char[] tChars = t.toCharArray();
-        int n = s.length();
-        int m = t.length();
+        int m = s.length();
+        int n = t.length();
 
-        int[] dp = new int[m + 1];  //当前行的数据
-        int[] temp = new int[m + 1];    //上一行的数据
+        // 当前行的数据
+        int[] dp = new int[n + 1];
+        // 上一行的数据
+        int[] temp = new int[n + 1];
         dp[0] = 1;
         temp[0] = 1;
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < m; i++) {
             char ch = s.charAt(i);
-            for (int j = 1; j < m + 1; j++) {
+            for (int j = 1; j < n + 1; j++) {
                 if (ch == tChars[j - 1]) {
-                    dp[j] += temp[j-1];
+                    dp[j] += temp[j - 1];
                 }
-                temp[j-1] = dp[j-1];    //顺带刷新缓存的上一行数据（数据已经被使用过，可以刷新覆盖）
+                // 顺带刷新缓存的上一行数据（数据已经被使用过，可以刷新覆盖）
+                temp[j - 1] = dp[j - 1];
             }
         }
-        return dp[m];
+        return dp[n];
     }
 }

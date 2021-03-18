@@ -63,6 +63,11 @@
 package StringToIntegerAtoi;
 
 public class  StringToIntegerAtoi {
+    // core 需要判断特殊情况
+    // 1. 去除空格
+    // 2. 如果都是空格按0处理
+    // 3. 存在非数字字符
+    // 4. 超过int最大值
     public int myAtoi(String str) {
         char[] chars = str.toCharArray();
         int n = chars.length;
