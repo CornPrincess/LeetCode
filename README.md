@@ -26,6 +26,7 @@ I am looking forward to your pull request and star.
 |225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | [Java](./algorithms/java/ImplementStackUsingQueues/ImplementStackUsingQueues.java)|Easy|#|2|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Java](./algorithms/java/ReverseLinkedList/ReverseLinkedList.java)|Easy|iterative recursive|2|
 |202|[Happy Number](https://leetcode.com/problems/happy-number/solution/kuai-le-shu-by-leetcode/) | [Java](./algorithms/java/HappyNumber/HappyNumber.java)|Easy|HashSet Two point|2|
+|191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | [Java](./algorithms/java/NumberOf1Bits/NumberOf1Bits.java)|Easy|Bitwise Operation|1|
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | [Java](./algorithms/java/ReverseWordsInAString/ReverseWordsInAString.java)|Medium|Regex StringBuilder Deque|1|
 |150|[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [Java](./algorithms/java/EvaluateReversePolishNotation/EvaluateReversePolishNotation.java)|Medium|stack|1|
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | [Java](./algorithms/java/LinkedListCycle/LinkedListCycle.java)|Easy|HashSet Two Points|1|
@@ -34,6 +35,7 @@ I am looking forward to your pull request and star.
 |115|[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) | [Java](./algorithms/java/DistinctSubsequences/DistinctSubsequences.java)|Hard|Recursive DP|1|
 |110|[Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | [Java](./algorithms/java/BalancedBinaryTree/BalancedBinaryTree.java)|Easy|Balance Tree|1|
 |92|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | [Java](./algorithms/java/ReverseLinkedListII/ReverseLinkedListII.java)|Medium|Two Point|1|
+|73|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | [Java](./algorithms/java/SetMatrixZeroes/SetMatrixZeroes.java)|Medium|Two-dimensional Array|1|
 |59|[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | [Java](./algorithms/java/SpiralMatrix2/SpiralMatrixii.java)|Medium|Two-dimensional Array|1|
 |55|[Jump Game](https://leetcode.com/problems/jump-game/) | [Java](./algorithms/java/JumpGame/JumpGame.java)|Medium|Greedy|1|
 |49|[Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [Java](./algorithms/java/GroupAnagrams/GroupAnagrams.java)|Medium|HashMap|1|
