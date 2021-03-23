@@ -34,4 +34,10 @@ public class SpiralMatrixiiTest {
             System.out.println(Arrays.toString(a));
         }
     }
+
+    @Test
+    public void test4() {
+        String s = (String) null;
+        System.out.println(s == null);
+    }
 }
