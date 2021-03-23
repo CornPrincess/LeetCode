@@ -26,55 +26,40 @@
 
 package FlattenNestedListIterator;
 
-import java.util.Deque;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class NestedIterator implements Iterator<Integer> {
-    private List<NestedInteger> nestedLists;
-    private Deque<List<NestedInteger>> stack = new LinkedList<>();
+    private List<Integer> list = new ArrayList<>();
     private int index = 0;
 
+    // core 一种解题思路，使用DFS算法将整个集合进行摊平处理，
+    // 摊平的所有数据都放在内部的 list 中，然后再对这个 list 进行 hasNext 和 next 的开发
+    // 时间复杂度：初始化 O(n) hasNext next 都为 O(1)
+    // 空间复杂度：O(n)
     public NestedIterator(List<NestedInteger> nestedList) {
-        this.nestedLists = nestedList;
+        for (NestedInteger ni : nestedList) {
+            init(ni);
+        }
+    }
+
+    private void init(NestedInteger ni) {
+        if (ni.isInteger()) {
+            this.list.add(ni.getInteger());
+        }
+
+        for (NestedInteger tni : ni.getList()) {
+            init(tni);
+        }
     }
 
     @Override
     public boolean hasNext() {
-        return this.index < nestedLists.size();
+        return index < list.size();
     }
 
     @Override
     public Integer next() {
-        NestedInteger nestedInteger =  this.nestedLists.get(index);
-        this.index++;
-
-        if (nestedInteger.isInteger()) {
-            return nestedInteger.getInteger();
-        }
-
-        List<NestedInteger> list = nestedInteger.getList();
+        return this.list.get(index++);
     }
 
-    // dfs
-    // 如何记录当前遍历的是哪个list，最简单的方法就是使用栈来模拟递归
-    public Integer next0(List<NestedInteger> list) {
-        this.stack.push(list);
-
-        for (NestedInteger ni : list) {
-            if (ni.isInteger()) {
-                return ni.getInteger();
-            } else {
-                stack.push(ni.getList());
-            }
-        }
-
-        List<NestedInteger> list = nestedInteger.getList();
-        NestedIterator it = new NestedIterator(list);
-        while (it.hasNext()) {
-//            return it.next0();
-        }
-        return -1;
-    }
 }
