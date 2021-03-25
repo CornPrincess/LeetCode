@@ -70,22 +70,20 @@ public class Pattern {
     // 暴力方法 brute force
     // 时间复杂度：O(n^2)
     // 空间复杂度: O(1)
-    public boolean find132pattern1(int[] nums) {
+    public boolean find132patternj(int[] nums) {
         if (nums == null || nums.length < 3) {
             return false;
         }
-
-        // 2 1 4 2
-        for (int j = 1; j < nums.length-1; j++) {
+        for (int j = 1; j < nums.length - 1; j++) {
             int leftMin = Integer.MAX_VALUE;
             for (int i = 0; i < j; i++) {
-                if(nums[i] < leftMin)  {
+                if (nums[i] < leftMin) {
                     leftMin = nums[i];
                 }
             }
 
-            for (int k = j+1; k < nums.length; k++) {
-                if(nums[k] < nums[j] && leftMin < nums[k]) {
+            for (int k = j + 1; k < nums.length; k++) {
+                if (nums[k] < nums[j] && leftMin < nums[k]) {
                     return true;
                 }
             }
@@ -93,20 +91,23 @@ public class Pattern {
         return false;
     }
 
-    public boolean find132pattern11(int[] nums) {
+    // 暴力方法 brute force
+    // 时间复杂度：O(n^2)
+    // 空间复杂度: O(1)
+    public boolean find132patternk(int[] nums) {
         if (nums == null || nums.length < 3) {
             return false;
         }
 
         for (int k = 2; k < nums.length; k++) {
             int i = 0;
-            for (; i < k-1; i++) {
+            for (; i < k - 1; i++) {
                 if (nums[i] < nums[k]) {
                     break;
                 }
             }
 
-            for (int j = i+1; j < k; j++) {
+            for (int j = i + 1; j < k; j++) {
                 if (nums[k] < nums[j]) {
                     return true;
                 }

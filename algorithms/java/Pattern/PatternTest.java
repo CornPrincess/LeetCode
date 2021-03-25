@@ -11,6 +11,7 @@ import static org.junit.Assert.*;
  * @date 2021/3/24 1:00 PM
  */
 public class PatternTest {
+    Pattern pattern = new Pattern();
 
     @Test
     public void find132pattern() {
@@ -26,5 +27,11 @@ public class PatternTest {
         priorityQueue.add(8);
         priorityQueue.add(7);
         System.out.println(priorityQueue);
+    }
+
+    @Test
+    public void find132patterni() {
+        int[] nums = {1,0,1,-4,-3};
+        pattern.find132patterni(nums);
     }
 }
