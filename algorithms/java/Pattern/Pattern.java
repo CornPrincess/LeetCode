@@ -2,9 +2,9 @@
 // Author : zhoutianbin
 // Date   : 2021-03-24
 
-/***************************************************************************************************** 
+/*****************************************************************************************************
  *
- * Given an array of n integers nums, a 132 pattern is a subsequence of three integers nums[i], 
+ * Given an array of n integers nums, a 132 pattern is a subsequence of three integers nums[i],
  * nums[j] and nums[k] such that i < j < k and nums[i] < nums[k] < nums[j].
  *
  * Return true if there is a 132 pattern in nums, otherwise, return false.
@@ -38,6 +38,8 @@
 
 package Pattern;
 
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.TreeMap;
 
 public class Pattern {
@@ -149,6 +151,30 @@ public class Pattern {
             if (map.get(nums[j + 1]) == 0) {
                 map.remove(nums[j + 1]);
             }
+        }
+        return false;
+    }
+
+    // 单调栈，作用相当于 map.ceilingKey
+    // 从 j 开始遍历
+    public boolean find132pattern3(int[] nums) {
+        if (nums == null || nums.length < 3) {
+            return false;
+        }
+
+        int maxCandidateK = Integer.MIN_VALUE;
+        Deque<Integer> stack = new LinkedList<>();
+        for (int i = nums.length - 1; i >= 0; i--) {
+            //  1 3 2 3 5 6 7
+            // core 这行代码是精髓所在，因为是从右向左遍历，并且使用了单调栈的特性，
+            // 可以保证 k 一定是当前最大的 k
+            if (nums[i] < maxCandidateK) {
+                return true;
+            }
+            while (!stack.isEmpty() && stack.peek() < nums[i]) {
+                maxCandidateK = stack.pop();
+            }
+            stack.push(nums[i]);
         }
         return false;
     }
