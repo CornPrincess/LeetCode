@@ -96,4 +96,37 @@ public class RotateList {
         temp.next = null;
         return res;
     }
+
+    public ListNode rotateRight3(ListNode head, int k) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        // 1.计算断开的节点，即k值
+        ListNode temp = head;
+        int length = 0;
+        while (temp != null) {
+            length++;
+            temp = temp.next;
+        }
+        k %= length;
+        if (k == 0) {
+            return head;
+        }
+
+        // 1 2 3 4 5
+        ListNode slow = head;
+        ListNode fast = head;
+        while (k >0) {
+            fast = fast.next;
+            k--;
+        }
+        while (fast.next != null) {
+            fast = fast.next;
+            slow = slow.next;
+        }
+        ListNode res = slow.next;
+        slow.next = null;
+        fast.next = head;
+        return res;
+    }
 }

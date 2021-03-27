@@ -4,8 +4,6 @@ import org.junit.Test;
 
 import java.util.PriorityQueue;
 
-import static org.junit.Assert.*;
-
 /**
  * @author zhoutianbin
  * @date 2021/3/24 1:00 PM
@@ -32,6 +30,5 @@ public class PatternTest {
     @Test
     public void find132patterni() {
         int[] nums = {1,0,1,-4,-3};
-        pattern.find132patterni(nums);
     }
 }

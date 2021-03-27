@@ -3,8 +3,6 @@ package RotateList;
 import common.ListNode;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 /**
  * @author zhoutianbin
  * @date 2021/3/27 10:49 PM
@@ -16,8 +14,10 @@ public class RotateListTest {
     public void test() {
         ListNode listNode = rotateList.rotateRight(init(), 2);
         ListNode listNode2 = rotateList.rotateRight2(init(), 2);
+        ListNode listNode3 = rotateList.rotateRight2(init(), 2);
         listNode.print();
         listNode2.print();
+        listNode3.print();
     }
 
     private ListNode init() {

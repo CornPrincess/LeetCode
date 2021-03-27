@@ -4,8 +4,6 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.*;
-
 /**
  * @author zhoutianbin
  * @date 2021/3/16 12:58 PM

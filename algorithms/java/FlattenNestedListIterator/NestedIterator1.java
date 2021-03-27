@@ -26,7 +26,10 @@
 
 package FlattenNestedListIterator;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.Iterator;
+import java.util.List;
 
 public class NestedIterator1 implements Iterator<Integer> {
     private Deque<Integer> queue = new ArrayDeque<>();

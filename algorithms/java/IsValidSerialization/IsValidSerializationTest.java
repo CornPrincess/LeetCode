@@ -6,8 +6,6 @@ import org.junit.Test;
 import java.util.Deque;
 import java.util.LinkedList;
 
-import static org.junit.Assert.*;
-
 /**
  * @author zhoutianbin
  * @date 2021/3/18 9:52 AM
