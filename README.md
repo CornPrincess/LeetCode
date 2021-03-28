@@ -36,6 +36,7 @@ I am looking forward to your pull request and star.
 |136|[Single Number](https://leetcode.com/problems/single-number/) | [Java](./algorithms/java/SingleNumber/SingleNumber.java)|Easy|List, Map, Bitwise Operation|1|
 |115|[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) | [Java](./algorithms/java/DistinctSubsequences/DistinctSubsequences.java)|Hard|Recursive DP|1|
 |110|[Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | [Java](./algorithms/java/BalancedBinaryTree/BalancedBinaryTree.java)|Easy|Balance Tree|1|
+|94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Java](./algorithms/java/BinaryTreeInorderTraversal/BinaryTreeInorderTraversal.java)|Medium|Stack, Morris|1|
 |92|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | [Java](./algorithms/java/ReverseLinkedListII/ReverseLinkedListII.java)|Medium|Two Point|1|
 |83|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [Java](./algorithms/java/RemoveDuplicatesFromSortedList/RemoveDuplicatesFromSortedList.java)|Easy|recursive|1|
 |82|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [Java](./algorithms/java/RemoveDuplicatesFromSortedListIi/RemoveDuplicatesFromSortedListIi.java)|Medium|Two Points, recursive|1|
