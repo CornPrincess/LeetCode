@@ -91,6 +91,17 @@ public class ReverseBits {
         return res;
     }
 
+    public int reverseBits2_1(int n) {
+        int res = 0;
+        int power = 31;
+        while (n != 0) {
+            res += (n & 1) << power;
+            power--;
+            n >>>= 1;
+        }
+        return res;
+    }
+
     // 分治思想
     // 1001 0100
 
