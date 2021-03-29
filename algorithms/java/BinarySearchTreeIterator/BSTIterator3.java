@@ -56,36 +56,23 @@ package BinarySearchTreeIterator;
 
 import common.TreeNode;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
-// 递归
-public class BSTIterator {
-    private Queue<Integer> queue = new LinkedList<>();
-
-    public BSTIterator(TreeNode root) {
+public class BSTIterator3 {
+    // TODO morris
+    public BSTIterator3(TreeNode root) {
         init(root);
     }
 
     private void init(TreeNode root) {
-        if (root == null) {
-            return;
-        }
-        init(root.left);
-        queue.add(root.val);
-        init(root.right);
+
     }
 
     public int next() {
-        return queue.poll();
     }
 
     public boolean hasNext() {
-        return !queue.isEmpty();
     }
 
     public void test() {
-        System.out.println(queue);
     }
 
 }

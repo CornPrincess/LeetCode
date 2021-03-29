@@ -56,36 +56,35 @@ package BinarySearchTreeIterator;
 
 import common.TreeNode;
 
+import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;
 
-// 递归
-public class BSTIterator {
-    private Queue<Integer> queue = new LinkedList<>();
+// 迭代
+public class BSTIterator2 {
+    private Deque<TreeNode> stack = new LinkedList<>();
 
-    public BSTIterator(TreeNode root) {
+    public BSTIterator2(TreeNode root) {
         init(root);
     }
 
     private void init(TreeNode root) {
-        if (root == null) {
-            return;
+        while (root != null) {
+            stack.push(root);
+            root = root.left;
         }
-        init(root.left);
-        queue.add(root.val);
-        init(root.right);
     }
 
     public int next() {
-        return queue.poll();
+        TreeNode node = stack.pop();
+        int res = node.val;
+        node = node.right;
+        init(node);
+        return res;
     }
 
     public boolean hasNext() {
-        return !queue.isEmpty();
-    }
-
-    public void test() {
-        System.out.println(queue);
+        return !stack.isEmpty();
     }
 
 }
