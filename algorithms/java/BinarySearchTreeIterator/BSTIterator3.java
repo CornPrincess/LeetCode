@@ -67,9 +67,11 @@ public class BSTIterator3 {
     }
 
     public int next() {
+        return -1;
     }
 
     public boolean hasNext() {
+        return false;
     }
 
     public void test() {

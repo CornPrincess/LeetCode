@@ -22,6 +22,7 @@ I am looking forward to your pull request and star.
 |409|[Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | [Java](./algorithms/java/LongestPalindrome/LongestPalindrome.java)|Easy|Greedy, Bitwise Operation|1|
 |341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/) | [Java](./algorithms/java/FlattenNestedListIterator/NestedIterator.java)|Medium|DFS Stack|1|
 |331|[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/) | [Java](./algorithms/java/IsValidSerialization/IisValidSerialization.java)|Medium|Stack|1|
+|303|[Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/) | [Java](./algorithms/java/RangeSumQueryImmutable/NumArray.java)|Easy|Caching|1|
 |289|[Game of Life](https://leetcode.com/problems/game-of-life/) | [Java](./algorithms/java/GameOfLife/GameOfLife.java)|Medium|Bitwise Operation|1|
 |283|[Move Zeroes](https://leetcode.com/problems/move-../zeroes/) | [Java](./algorithms/java/MoveZeroes/MoveZeroes.java)|Easy|#|1|
 |232|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | [Java](./algorithms/java/ImplementQueueUsingStacks/ImplementQueueUsingStacks.java)|Easy|#|1|
@@ -42,6 +43,7 @@ I am looking forward to your pull request and star.
 |92|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | [Java](./algorithms/java/ReverseLinkedListII/ReverseLinkedListII.java)|Medium|Two Point|1|
 |83|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [Java](./algorithms/java/RemoveDuplicatesFromSortedList/RemoveDuplicatesFromSortedList.java)|Easy|recursive|1|
 |82|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [Java](./algorithms/java/RemoveDuplicatesFromSortedListIi/RemoveDuplicatesFromSortedListIi.java)|Medium|Two Points, recursive|1|
+|74|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | [Java](./algorithms/java/SearchA2dMatrix/SearchA2dMatrix.java)|Medium|Binary Search|1|
 |73|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | [Java](./algorithms/java/SetMatrixZeroes/SetMatrixZeroes.java)|Medium|Two-dimensional Array|1|
 |61|[Rotate List](https://leetcode.com/problems/rotate-list/) | [Java](./algorithms/java/RotateList/RotateList.java)|Medium|Two Points|1|
 |59|[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | [Java](./algorithms/java/SpiralMatrix2/SpiralMatrixii.java)|Medium|Two-dimensional Array|1|

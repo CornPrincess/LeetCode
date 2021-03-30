@@ -15,6 +15,7 @@ import static org.junit.Assert.*;
  */
 public class BinaryTreeInorderTraversalTest {
     private BinaryTreeInorderTraversal binaryTreeInorderTraversal = new BinaryTreeInorderTraversal();
+    private boolean success = false;
 
     @Test
     public void inorderTraversal3() {
@@ -37,5 +38,15 @@ public class BinaryTreeInorderTraversalTest {
         left.right = left1_2;
         right.left = right1_1;
         return root;
+    }
+
+    @Test
+    public void test() {
+        final String s = String.valueOf(getCode());
+        System.out.println(s);
+    }
+
+    private Integer getCode() {
+        return this.success ? 0 : null;
     }
 }
