@@ -30,6 +30,8 @@ import java.util.List;
 
 public class SubsetsIi {
     // backtracking
+    // 时间复杂度：O(N*2^N)
+    // 空间复杂度：O(N)
     public List<List<Integer>> subsetsWithDup(int[] nums) {
         List<List<Integer>> ans = new ArrayList<>();
         List<Integer> t = new ArrayList<>();
