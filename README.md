@@ -41,8 +41,10 @@ I am looking forward to your pull request and star.
 |110|[Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | [Java](./algorithms/java/BalancedBinaryTree/BalancedBinaryTree.java)|Easy|Balance Tree|1|
 |94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Java](./algorithms/java/BinaryTreeInorderTraversal/BinaryTreeInorderTraversal.java)|Medium|Stack, Morris|1|
 |92|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | [Java](./algorithms/java/ReverseLinkedListII/ReverseLinkedListII.java)|Medium|Two Point|1|
+|90|[Subsets II](https://leetcode.com/problems/subsets-ii/) | [Java](./algorithms/java/SubsetsIi/SubsetsIi.java)|Medium|backtracking|1|
 |83|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [Java](./algorithms/java/RemoveDuplicatesFromSortedList/RemoveDuplicatesFromSortedList.java)|Easy|recursive|1|
 |82|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [Java](./algorithms/java/RemoveDuplicatesFromSortedListIi/RemoveDuplicatesFromSortedListIi.java)|Medium|Two Points, recursive|1|
+|78|[Subsets](https://leetcode.com/problems/subsets/) | [Java](./algorithms/java/Subsets/Subsets.java)|Medium|backtracking|1|
 |74|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | [Java](./algorithms/java/SearchA2dMatrix/SearchA2dMatrix.java)|Medium|Binary Search|1|
 |73|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | [Java](./algorithms/java/SetMatrixZeroes/SetMatrixZeroes.java)|Medium|Two-dimensional Array|1|
 |61|[Rotate List](https://leetcode.com/problems/rotate-list/) | [Java](./algorithms/java/RotateList/RotateList.java)|Medium|Two Points|1|
@@ -52,6 +54,7 @@ I am looking forward to your pull request and star.
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [Java](./algorithms/java/SwapNodesInPairs/SwapNodesInPairs.java)|Medium|iterative recursive|1|
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Java](./algorithms/java/ValidParentheses/ValidParentheses.java)|Easy|Stack HashMap|1|
 |8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | [Java](./algorithms/java/StringToIntegerAtoi/StringToIntegerAtoi.java)|Medium|DFA|1|
+|7|[Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [Java](./algorithms/java/ReverseInteger/ReverseInteger.java)|Easy|Math|1|
 
 > note: `#` means that I use the common method, just some logic operate
 
