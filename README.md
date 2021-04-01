@@ -12,6 +12,7 @@ I am looking forward to your pull request and star.
 |1160|[Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/) | [Java](./algorithms/java/FindWordsThatCanBeFormedByCharacters/FindWordsThatCanBeFormedByCharacters.java)|Easy|Two hashMap|1|
 |1111|[Maximum Nesting Depth of Two Valid Parentheses Strings](https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/) | [Java](./algorithms/java/MaximumNestingDepthOfTwoValidParenthesesStrings/MaximumNestingDepthOfTwoValidParenthesesStrings.java)|Medium|Bitwise Operation|1|
 |1103|[Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/) | [Java](./algorithms/java/DistributeCandiesToPeople/DistributeCandiesToPeople.java)|Easy|#|1|
+|1006|[Clumsy Factorial](https://leetcode.com/problems/clumsy-factorial/) | [Java](./algorithms/java/ClumsyFactorial/ClumsyFactorial.java)|Medium|Stack, Math|1|
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | [Java](./algorithms/java/RottingOranges/RottingOranges.java)|Easy|#|1|
 |945|[Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/) | [Java](./algorithms/java/MinimumIncrementToMakeArrayUnique/MinimumIncrementToMakeArrayUnique.java)|Medium|Count, Sort|1|
 |914|[X of a Kind in a Deck of Cards](https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/) | [Java](./algorithms/java/XOfAKindInADeckOfCards/XOfAKindInADeckOfCards.java)|Easy|GCD|1|
