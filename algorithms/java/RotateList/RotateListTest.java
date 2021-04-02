@@ -1,6 +1,7 @@
 package RotateList;
 
 import common.ListNode;
+import common.ListNodeUtils;
 import org.junit.Test;
 
 /**
@@ -15,9 +16,9 @@ public class RotateListTest {
         ListNode listNode = rotateList.rotateRight(init(), 2);
         ListNode listNode2 = rotateList.rotateRight2(init(), 2);
         ListNode listNode3 = rotateList.rotateRight2(init(), 2);
-        listNode.print();
-        listNode2.print();
-        listNode3.print();
+        ListNodeUtils.print(listNode);
+        ListNodeUtils.print(listNode2);
+        ListNodeUtils.print(listNode3);
     }
 
     private ListNode init() {
