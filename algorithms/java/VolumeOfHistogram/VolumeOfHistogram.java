@@ -7,6 +7,7 @@ package VolumeOfHistogram;
  * Time: 11:34 PM
  */
 public class VolumeOfHistogram {
+
     // 朴素解法
     public int trap(int[] height) {
         int res = 0;
