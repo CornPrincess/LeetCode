@@ -132,7 +132,7 @@ public class Solution {
      * 计算并返回 nums 的所有 非空 子序列中 不同 最大公约数的 数目 。
      */
     public int countDifferentSubsequenceGCDs(int[] nums) {
-
+        return -1;
     }
 
     private int calcABS(int a, int b) {

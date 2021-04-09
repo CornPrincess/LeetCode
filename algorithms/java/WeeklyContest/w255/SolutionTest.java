@@ -3,6 +3,7 @@ package WeeklyContest.w255;
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.Date;
 
 import static org.junit.Assert.*;
 
@@ -62,5 +63,15 @@ public class SolutionTest {
         System.out.println(nums2[11]);
         int ans = solution.minAbsoluteSumDiff(nums1, nums2);
         System.out.println(ans);
+    }
+
+    @Test
+    public void test6() throws InterruptedException {
+        Date now = new Date();
+        Thread.sleep(1);
+        Date after = new Date();
+        System.out.println(now.getTime());
+        System.out.println(after.getTime());
+        System.out.println(now.before(after));
     }
 }
