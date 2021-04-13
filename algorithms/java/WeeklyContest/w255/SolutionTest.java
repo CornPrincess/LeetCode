@@ -74,4 +74,9 @@ public class SolutionTest {
         System.out.println(after.getTime());
         System.out.println(now.before(after));
     }
+
+    @Test
+    public void test7() {
+        String s = "{\"coupons\":[{\"couponInfo\":{\"displayName\":\"满减-邀请有礼（第一单更新）\",\"id\":\"606c447c2fee3a6e3f8b7544\"},\"limit\":8}],\"cumulativeOrderCnt\":1,\"giveCrawfish\":false,\"notOwnedRewardPictureUrl\":\"https://ddfs-public.ddimg.mobi/cms-service/png/2021/04/02/e3a7551d243e4be2a4e43efb54e717ae.png?size=750%C3%97600\",\"ownedRewardPictureUrl\":\"https://ddfs-public.ddimg.mobi/cms-service/png/2021/03/30/e0a0371307d44ef88a9ad142908208f0.png?size=750×600\"}";
+    }
 }
