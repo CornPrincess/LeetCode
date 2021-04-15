@@ -59,6 +59,7 @@ I am looking forward to your pull request and star.
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Java](./algorithms/java/ValidParentheses/ValidParentheses.java)|Easy|Stack HashMap|1|
 |8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | [Java](./algorithms/java/StringToIntegerAtoi/StringToIntegerAtoi.java)|Medium|DFA|1|
 |7|[Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [Java](./algorithms/java/ReverseInteger/ReverseInteger.java)|Easy|Math|1|
+|1|[Two Sum](https://leetcode.com/problems/two-sum/) | [Java](./algorithms/java/TwoSum/TwoSum.java)|Easy|HashMap|1|
 
 > note: `#` means that I use the common method, just some logic operate
 
