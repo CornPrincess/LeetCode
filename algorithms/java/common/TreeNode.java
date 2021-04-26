@@ -22,7 +22,7 @@ public class TreeNode {
         this.right = right;
     }
 
-    public void inorder(TreeNode root) {
+    public static void inorder(TreeNode root) {
         if (root == null) {
             return;
         }
