@@ -15,6 +15,7 @@ I am looking forward to your pull request and star.
 |1006|[Clumsy Factorial](https://leetcode.com/problems/clumsy-factorial/) | [Java](./algorithms/java/ClumsyFactorial/ClumsyFactorial.java)|Medium|Stack, Math|1|
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | [Java](./algorithms/java/RottingOranges/RottingOranges.java)|Easy|#|1|
 |945|[Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/) | [Java](./algorithms/java/MinimumIncrementToMakeArrayUnique/MinimumIncrementToMakeArrayUnique.java)|Medium|Count, Sort|1|
+|938|[Range Sum of BST](https://leetcode-cn.com/problems/range-sum-of-bst/) | [Java](./algorithms/java/RangeSumOfBst/RangeSumOfBst.java)|Easy|BST|1|
 |914|[X of a Kind in a Deck of Cards](https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/) | [Java](./algorithms/java/XOfAKindInADeckOfCards/XOfAKindInADeckOfCards.java)|Easy|GCD|1|
 |897|[Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/) | [Java](./algorithms/java/IncreasingOrderSearchTree/IncreasingOrderSearchTree.java)|Easy|inorder|1|
 |892|[Surface Area of 3D Shapes](https://leetcode.com/problems/surface-area-of-3d-shapes/) | [Java](./algorithms/java/SurfaceAreaOf3dShapes/SurfaceAreaOf3dShapes.java)|Easy|Square by Square|1|
