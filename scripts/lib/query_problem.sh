@@ -1,13 +1,13 @@
 #!/bin/bash
 
 LEETCODE_URL=https://leetcode.com/problems/
-LEETCODE_NEW_URL=https://leetcode.com/problems/
+LEETCODE_NEW_URL=https://leetcode-cn.com/problems/
 LEETCODE_OLD_URL=https://oj.leetcode.com/problems/
 
 
 function get_question_slug()
 {
-    QUESTION_TITLE_SLUG=${1#${LEETCODE_URL}}
+    QUESTION_TITLE_SLUG=${1#${LEETCODE_NEW_URL}}
     QUESTION_TITLE_SLUG=$(echo $QUESTION_TITLE_SLUG | sed 's/\/.*//g') # remove the needless url path
 }
 
@@ -22,8 +22,8 @@ function query_problem()
     #       So, you need make sure the `accept-encoding` hasn't br in the request header.
     #       (if you copy & paste the curl script from Chrome, the `br` could be added!)
     #
-    curl -s 'https://leetcode.com/graphql' \
-    -H 'origin: https://leetcode.com' \
+    curl -s 'https://leetcode-cn.com/graphql' \
+    -H 'origin: https://leetcode-cn.com' \
     -H 'accept-encoding: gzip, deflate' \
     -H 'accept-language: zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7' \
     -H 'cookie: __cfduid=dae082e425ee3916c04a5170b832e268e1524142659; _ga=GA1.2.1432146910.1524142661; _gid=GA1.2.650843898.1529736240; csrftoken=iSKedVXxGDkBBXbP9chsyXhbIrRedF7iw2EMRZiemtzKD8vjHSWZJKkKQVIwZKp7; __atuvc=2%7C25; __atuvs=5b2ded02313c83c4001; _gat=1' \
@@ -31,7 +31,7 @@ function query_problem()
     -H 'pragma: no-cache' \
     -H 'content-type: application/json' \
     -H 'accept: */*' -H 'cache-control: no-cache' \
-    -H 'authority: leetcode.com' \
+    -H 'authority: leetcode-cn.com' \
      -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36' \
     -H "referer: ${1}" \
     --data-binary '{"operationName":"questionData","variables":{"titleSlug":"'${2}'"},"query":"query questionData($titleSlug: String!) {\n  question(titleSlug: $titleSlug) {\n    questionId\n    questionFrontendId\n    boundTopicId\n    title\n    titleSlug\n    content\n    translatedTitle\n    translatedContent\n    isPaidOnly\n    difficulty\n    likes\n    dislikes\n    isLiked\n    similarQuestions\n    contributors {\n      username\n      profileUrl\n      avatarUrl\n      __typename\n    }\n    langToValidPlayground\n    topicTags {\n      name\n      slug\n      translatedName\n      __typename\n    }\n    companyTagStats\n    codeSnippets {\n      lang\n      langSlug\n      code\n      __typename\n    }\n    stats\n    hints\n    solution {\n      id\n      canSeeDetail\n      __typename\n    }\n    status\n    sampleTestCase\n    metaData\n    judgerAvailable\n    judgeType\n    mysqlSchemas\n    enableRunCode\n    enableTestMode\n    envInfo\n    __typename\n  }\n}\n"}' --compressed > ${TMP_JSON_FILE}
