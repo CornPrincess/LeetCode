@@ -22,6 +22,7 @@ I am looking forward to your pull request and star.
 |876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | [Java](./algorithms/java/MiddleOfTheLinkedList/MiddleOfTheLinkedList.java)|Easy|Two Points|1|
 |836|[Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap/) | [Java](./algorithms/java/RectangleOverlap/RectangleOverlap.java)|Easy|#|1|
 |690|[Employee Importance](https://leetcode-cn.com/problems/employee-importance/) | [Java](./algorithms/java/EmployeeImportance/EmployeeImportance.java)|Easy|DFS BFS|1|
+|554|[Brick Wall](https://leetcode-cn.com/problems/brick-wall/) | [Java](./algorithms/java/BrickWall/BrickWall.java)|Medium|HashMap|1|
 |456|[132 Pattern](https://leetcode.com/problems/132-pattern/) | [Java](./algorithms/java/Pattern/Pattern.java)|Medium|stack|1|
 |409|[Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | [Java](./algorithms/java/LongestPalindrome/LongestPalindrome.java)|Easy|Greedy, Bitwise Operation|1|
 |368|[Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/) | [Java](./algorithms/java/LargestDivisibleSubset/LargestDivisibleSubset.java)|Medium|DP|1|
