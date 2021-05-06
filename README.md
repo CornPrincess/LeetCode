@@ -8,6 +8,7 @@ I am looking forward to your pull request and star.
 
 | #    | Title                                                   | Solution | Difficulty | Method| Times |
 | :----: | :-------------------------------------------------------: | :--------: | :----------: | :--------: | :----------: |
+|1720|[Decode XORed Array](https://leetcode-cn.com/problems/decode-xored-array/) | [Java](./algorithms/java/DecodeXoredArray/DecodeXoredArray.java)|Easy|Bitwise Operation|1|
 |1603|[Design Parking System](https://leetcode.com/problems/design-parking-system/) | [Java](./algorithms/java/DesignParkingSystem/ParkingSystem.java)|Easy|Bitwise Operation|1|
 |1160|[Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/) | [Java](./algorithms/java/FindWordsThatCanBeFormedByCharacters/FindWordsThatCanBeFormedByCharacters.java)|Easy|Two hashMap|1|
 |1111|[Maximum Nesting Depth of Two Valid Parentheses Strings](https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/) | [Java](./algorithms/java/MaximumNestingDepthOfTwoValidParenthesesStrings/MaximumNestingDepthOfTwoValidParenthesesStrings.java)|Medium|Bitwise Operation|1|
