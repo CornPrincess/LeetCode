@@ -47,6 +47,6 @@ package LastStoneWeightIi;
 
 public class LastStoneWeightIi {
     public int lastStoneWeightII(int[] stones) {
-
+        return -1;
     }
 }
