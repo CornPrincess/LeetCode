@@ -48,4 +48,4 @@ query_problem ${URL} ${QUESTION_TITLE_SLUG}
 
 FILE=`echo ${FILE} | sed "s/.*\/algorithms/\.\/algorithms/"`
 
-echo "|${QUESTION_FRONTEND_ID}|[${QUESTION_TITLE}](${URL}) | [Java](${FILE})|${QUESTION_DIFFICULTY}|"
+echo "|${QUESTION_FRONTEND_ID}|[${QUESTION_TITLE}](${URL}) | [CPP](${FILE})|${QUESTION_DIFFICULTY}|"

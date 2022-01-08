@@ -3,7 +3,7 @@ set -e
 
 AUTHOR="NOBODY"
 COMMENT_TAG="//"
-FILE_EXT=".java"
+FILE_EXT=".cpp"
 
 pushd `dirname $0` > /dev/null
 SCRIPTPATH=`pwd -P`
